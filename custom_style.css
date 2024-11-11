@@ -1,119 +1,66 @@
-
-/* Basic resets for a neomorphic style */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Base Colors */
+:root {
+  --primary-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.15);
+  --highlight-color: rgba(255, 255, 255, 0.7);
+  --button-color: #f5f5f5;
+  --accent-color: #6200ea;
 }
 
-/* General body and background styles */
+/* General Styling */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: #e0f7fa; /* Soft light blue-green background for a calm, natural feel */
-    color: #4e4e4e; /* Muted text color */
-    line-height: 1.6;
+  background-color: var(--primary-color);
+  font-family: Arial, sans-serif;
 }
 
-/* Neomorphic buttons */
-button, .btn {
-    background: #A5D6A7; /* Light green background */
-    border-radius: 12px; /* Rounded edges for a soft look */
-    border: 2px solid #81C784; /* Lighter border for depth */
-    color: #fff; /* White text */
-    padding: 12px 24px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.6); /* Neomorphic shadow */
-}
-
-button:hover, .btn:hover {
-    background: #81C784;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3), -2px -2px 6px rgba(255, 255, 255, 0.7);
-}
-
-/* Neomorphic input fields */
-input, textarea {
-    background: #ffffff;
-    border-radius: 12px;
-    border: none;
-    padding: 12px;
-    width: 100%;
-    font-size: 16px;
-    box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.1), inset -4px -4px 6px rgba(255, 255, 255, 0.8); /* Inset shadow for depth */
-    margin-bottom: 20px;
-    transition: box-shadow 0.3s ease;
-}
-
-/* Focus effect on input fields */
-input:focus, textarea:focus {
-    outline: none;
-    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2), inset -2px -2px 4px rgba(255, 255, 255, 0.9);
-}
-
-/* Neomorphic card containers */
+/* Neomorphic Card Style */
 .card {
-    background: #ffffff;
-    border-radius: 18px;
-    padding: 20px;
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.9);
-    margin: 20px;
+  background: var(--primary-color);
+  border-radius: 16px;
+  box-shadow: 8px 8px 16px var(--shadow-color), -8px -8px 16px var(--highlight-color);
+  padding: 20px;
+  margin: 20px;
 }
 
-.card h3 {
-    color: #2e7d32; /* Dark green for headings */
-    font-size: 24px;
+/* Buttons */
+.button {
+  background: var(--button-color);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 6px 6px 12px var(--shadow-color), -6px -6px 12px var(--highlight-color);
+  color: #333;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: box-shadow 0.2s;
+}
+.button:active {
+  box-shadow: inset 4px 4px 8px var(--shadow-color), inset -4px -4px 8px var(--highlight-color);
 }
 
-/* Neomorphic container */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Navbar */
+.navbar {
+  background: var(--primary-color);
+  box-shadow: 4px 4px 8px var(--shadow-color), -4px -4px 8px var(--highlight-color);
+  display: flex;
+  padding: 15px 20px;
+  border-radius: 12px;
 }
 
-/* Sustainability elements (leaf icons, eco-friendly graphics) */
-.eco-icon {
-    font-size: 30px;
-    color: #66bb6a; /* Earthy green for sustainability icons */
-    transition: transform 0.3s ease;
+/* Form Input Fields */
+.input-field {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 12px;
+  box-shadow: inset 6px 6px 12px var(--shadow-color), inset -6px -6px 12px var(--highlight-color);
+  padding: 10px;
+  width: 100%;
 }
 
-.eco-icon:hover {
-    transform: scale(1.2);
-}
-
-/* Additional subtle hover effects for interactivity */
-a, .link {
-    color: #66bb6a; /* Earthy green for links */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover, .link:hover {
-    color: #388e3c; /* Darker green on hover */
-}
-
-/* Neomorphic form with eco-friendly visual elements */
-form {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.9);
-}
-
-form input,
-form textarea {
-    margin-bottom: 10px;
-}
-
-/* Sustainability focus text */
-.sustainability-text {
-    font-size: 18px;
-    color: #388e3c; /* Dark green */
-    text-align: center;
-    margin-top: 30px;
-    font-weight: bold;
+/* Footer */
+.footer {
+  background: var(--primary-color);
+  box-shadow: 4px 4px 8px var(--shadow-color), -4px -4px 8px var(--highlight-color);
+  padding: 20px;
+  text-align: center;
+  border-radius: 16px;
 }
