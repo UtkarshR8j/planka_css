@@ -27,26 +27,6 @@ body {
   margin: 20px !important;
 }
 
-/* Buttons */
-.button {
-  background: var(--button-color) !important;
-  border: none !important;
-  border-radius: 8px !important;
-  box-shadow: 6px 6px 12px var(--shadow-color), -6px -6px 12px var(--highlight-color) !important;
-  color: var(--text-color) !important;
-  cursor: pointer !important;
-  padding: 10px 20px !important;
-  transition: box-shadow 0.2s, background-color 0.3s ease !important;
-}
-
-.button:hover {
-  background-color: #b2e6b2 !important;
-}
-
-.button:active {
-  box-shadow: inset 4px 4px 8px var(--shadow-color), inset -4px -4px 8px var(--highlight-color) !important;
-}
-
 /* Navbar */
 .navbar {
   background: var(--primary-color) !important;
