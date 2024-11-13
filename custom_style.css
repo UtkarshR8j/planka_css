@@ -3,6 +3,7 @@
   --primary-color: #ffffff !important;
   --text-color: #333333 !important;
   --footer-background: #f9f9f9 !important;
+  --longstraw-color:#1dbf72
 }
 
 /* General Styling */
@@ -25,7 +26,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background: var(--primary-color) !important;
+  background: var(--longstraw-color) !important;
   box-shadow: 4px 4px 8px var(--shadow-color), -4px -4px 8px var(--highlight-color) !important;
   display: flex !important;
   padding: 15px 20px !important;
