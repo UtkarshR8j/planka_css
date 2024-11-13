@@ -1,78 +1,78 @@
 /* Base Colors */
 :root {
-  --primary-color: #ffffff; /* White for light theme */
-  --shadow-color: rgba(0, 0, 0, 0.1); /* Lighter shadow for softer effect */
-  --highlight-color: rgba(255, 255, 255, 0.8); /* Softer highlight for contrast */
-  --button-color: #cce7cc; /* Light green for sustainability */
-  --accent-color: #4CAF50; /* Green to symbolize sustainability */
-  --text-color: #333333; /* Darker text for readability */
-  --footer-background: #f9f9f9; /* Light grey footer */
+  --primary-color: #ffffff !important;
+  --shadow-color: rgba(0, 0, 0, 0.1) !important;
+  --highlight-color: rgba(255, 255, 255, 0.8) !important;
+  --button-color: #cce7cc !important;
+  --accent-color: #4CAF50 !important;
+  --text-color: #333333 !important;
+  --footer-background: #f9f9f9 !important;
 }
 
 /* General Styling */
 body {
-  background-color: var(--primary-color);
-  font-family: 'Arial', sans-serif;
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
+  background-color: var(--primary-color) !important;
+  font-family: 'Arial', sans-serif !important;
+  color: var(--text-color) !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Neomorphic Card Style */
 .card {
-  background: var(--primary-color);
-  border-radius: 16px;
-  box-shadow: 8px 8px 16px var(--shadow-color), -8px -8px 16px var(--highlight-color);
-  padding: 20px;
-  margin: 20px;
+  background: var(--primary-color) !important;
+  border-radius: 16px !important;
+  box-shadow: 8px 8px 16px var(--shadow-color), -8px -8px 16px var(--highlight-color) !important;
+  padding: 20px !important;
+  margin: 20px !important;
 }
 
 /* Buttons */
 .button {
-  background: var(--button-color);
-  border: none;
-  border-radius: 8px;
-  box-shadow: 6px 6px 12px var(--shadow-color), -6px -6px 12px var(--highlight-color);
-  color: var(--text-color);
-  cursor: pointer;
-  padding: 10px 20px;
-  transition: box-shadow 0.2s, background-color 0.3s ease;
+  background: var(--button-color) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  box-shadow: 6px 6px 12px var(--shadow-color), -6px -6px 12px var(--highlight-color) !important;
+  color: var(--text-color) !important;
+  cursor: pointer !important;
+  padding: 10px 20px !important;
+  transition: box-shadow 0.2s, background-color 0.3s ease !important;
 }
 
 .button:hover {
-  background-color: #b2e6b2; /* Slightly darker green on hover */
+  background-color: #b2e6b2 !important;
 }
 
 .button:active {
-  box-shadow: inset 4px 4px 8px var(--shadow-color), inset -4px -4px 8px var(--highlight-color);
+  box-shadow: inset 4px 4px 8px var(--shadow-color), inset -4px -4px 8px var(--highlight-color) !important;
 }
 
 /* Navbar */
 .navbar {
-  background: var(--primary-color);
-  box-shadow: 4px 4px 8px var(--shadow-color), -4px -4px 8px var(--highlight-color);
-  display: flex;
-  padding: 15px 20px;
-  border-radius: 12px;
-  justify-content: space-between;
-  align-items: center;
+  background: var(--primary-color) !important;
+  box-shadow: 4px 4px 8px var(--shadow-color), -4px -4px 8px var(--highlight-color) !important;
+  display: flex !important;
+  padding: 15px 20px !important;
+  border-radius: 12px !important;
+  justify-content: space-between !important;
+  align-items: center !important;
 }
 
 /* Form Input Fields */
 .input-field {
-  background: var(--primary-color);
-  border: none;
-  border-radius: 12px;
-  box-shadow: inset 6px 6px 12px var(--shadow-color), inset -6px -6px 12px var(--highlight-color);
-  padding: 10px;
-  width: 100%;
+  background: var(--primary-color) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: inset 6px 6px 12px var(--shadow-color), inset -6px -6px 12px var(--highlight-color) !important;
+  padding: 10px !important;
+  width: 100% !important;
 }
 
 /* Footer */
 .footer {
-  background: var(--footer-background);
-  box-shadow: 4px 4px 8px var(--shadow-color), -4px -4px 8px var(--highlight-color);
-  padding: 20px;
-  text-align: center;
-  border-radius: 16px;
+  background: var(--footer-background) !important;
+  box-shadow: 4px 4px 8px var(--shadow-color), -4px -4px 8px var(--highlight-color) !important;
+  padding: 20px !important;
+  text-align: center !important;
+  border-radius: 16px !important;
 }
